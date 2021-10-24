@@ -4,7 +4,6 @@ struct ContentView: View {
     @EnvironmentObject var appValue: AppValue
     
     var body: some View {
-        
         ZStack {
             if appValue.showingSlider {
                 SliderView()
