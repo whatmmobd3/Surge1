@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "image":"s1",
+        "description":"No matter what weight you pick, your dumbbells feel the same, your kettlebell swings just right"
+    },
+    {
+        "id":2,
+        "image":"s2",
+        "description": "Sense-i tracks every rep & tells you just what you got out of it. We’ll tell you how your fast lifts work just as well as your slow lifts do"
+    },
+    {
+        "id":3,
+        "image":"s3",
+        "description": "Sense-i captures your every move, how well you lifted, how strong you felt lifting, and how many times you came back for more"
+    },
+    {
+        "id":4,
+        "image":"s2",
+        "description": "Lift together. Burn together. Swap workouts with each other. Because everyone needs a little encouragement. Or even a lot."
+    }
+    
+]
