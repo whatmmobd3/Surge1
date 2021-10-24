@@ -1,5 +1,4 @@
 import SwiftUI
-//first
 
 struct ContentView: View {
     @EnvironmentObject var appValue: AppValue
@@ -15,7 +14,6 @@ struct ContentView: View {
         }
         .background(Color.black)
         .ignoresSafeArea(.all, edges: .top)
-        
     }
     
 }

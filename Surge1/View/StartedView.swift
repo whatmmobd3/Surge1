@@ -10,7 +10,8 @@ struct StartedView: View {
         VStack(alignment: .center) {
             Spacer()
             Image("logo")
-            Text("Hello, World!")
+            Text("Welcome to the whole new way of strength tranning")
+                .multilineTextAlignment(.center)
             Spacer()
             Button(action: {
                 appValue.showingSlider = true
