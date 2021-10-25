@@ -6,17 +6,14 @@ struct SliderView: View {
     var body: some View {
         VStack() {
             FeatureTabView()
-            Spacer()
             Button(action: {
                 appValue.showingSlider = false
             }, label: {
-                ZStack {
-                    Text("Sign Up")
-                        .foregroundColor(.white)
-                }
-                .frame(width: 300, height: 50)
-                .background(Color.init(red: 23/255, green: 23/255, blue: 23/255))
-                .cornerRadius(8)
+                Text("Sign Up")
+                    .foregroundColor(.white)
+                    .frame(width: 300, height: 50)
+                    .background(Color.init(red: 23/255, green: 23/255, blue: 23/255))
+                    .cornerRadius(8)
             })
             HStack(spacing: 1.0) {
                 Text("Already have an account? ")

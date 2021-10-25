@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct FeatureItemView: View {
-    @State var slider: Slider
+    var slider: Slider
     var body: some View {
         Image(slider.image)
             .resizable()

@@ -5,9 +5,8 @@ struct FeatureTabView: View {
         TabView{
             ForEach(sliders){
                 slider in FeatureItemView(slider: slider)
-//                    .overlay(TextImage(),alignment: .bottom)
             }
-            .padding(20)
+            .padding(10)
             
         }
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
