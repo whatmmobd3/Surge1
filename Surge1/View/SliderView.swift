@@ -5,7 +5,16 @@ struct SliderView: View {
     
     var body: some View {
         VStack() {
-            FeatureTabView()
+//            FeatureTabView()
+            TabView{
+                ForEach(sliders){
+                    slider in FeatureItemView(slider: slider)
+                }
+                .padding(10)
+                
+            }
+            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+            
             Button(action: {
                 appValue.showingSlider = false
             }, label: {
@@ -15,13 +24,21 @@ struct SliderView: View {
                     .background(Color.init(red: 23/255, green: 23/255, blue: 23/255))
                     .cornerRadius(8)
             })
+//            HStack(spacing: 1.0) {
+//                Text("Already have an account? ")
+//                    .foregroundColor(.gray)
+//                Text("sign in")
+//                    .foregroundColor(.white)
+//            }
+//            .padding()
             HStack(spacing: 1.0) {
-                Text("Already have an account? ")
-                    .foregroundColor(.gray)
-                Text("sign in")
-                    .foregroundColor(.white)
+                Text("Already have account?")
+                    .foregroundColor(.red)
+                Text("Sign in")
+                    .foregroundColor(.yellow)
+
             }
-            .padding()
+     
         }
     }
 }

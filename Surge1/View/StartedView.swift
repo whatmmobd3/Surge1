@@ -10,16 +10,29 @@ struct StartedView: View {
             Text("Welcome to the whole new way of strength tranning")
                 .multilineTextAlignment(.center)
                 .lineLimit(nil)
+                
             
             Spacer()
             Button(action: {
-                appValue.showingSlider = true
+                
+                
             }, label: {
-                Text("get started now")
+                Text("Start")
                     .foregroundColor(.white)
                     .frame(width: 300, height: 50)
-                .background(Color.init(red: 23/255, green: 23/255, blue: 23/255))})
-                .cornerRadius(8.0)
+                    .background(Color.green)
+                    .cornerRadius(8.0)
+                
+                
+            })
+//            Button(action: {
+//                appValue.showingSlider = true
+//            }, label: {
+//                Text("get started now")
+//                    .foregroundColor(.white)
+//                    .frame(width: 300, height: 50)
+//                .background(Color.init(red: 23/255, green: 23/255, blue: 23/255))})
+//                .cornerRadius(8.0)
         }
     }
 }

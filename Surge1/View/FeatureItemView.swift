@@ -15,7 +15,7 @@ struct FeatureItemView: View {
 
 struct FeatureItemView_Previews: PreviewProvider {
     static var previews: some View {
-        FeatureItemView(slider: sliders[0])
+        FeatureItemView(slider: sliders[2])
             .previewLayout(.sizeThatFits)
             .padding()
     }
