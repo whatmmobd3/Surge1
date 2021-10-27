@@ -12,7 +12,6 @@
 		FB4F14852727E20900BD0C42 /* Circle2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F14842727E20900BD0C42 /* Circle2D.swift */; };
 		FB4F14872727E31600BD0C42 /* SSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F14862727E31600BD0C42 /* SSColor.swift */; };
 		FB4F148D2727ECC500BD0C42 /* Equiqment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F148C2727ECC500BD0C42 /* Equiqment.swift */; };
-		FB4F148F2727EE2C00BD0C42 /* EquimentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F148E2727EE2C00BD0C42 /* EquimentDetail.swift */; };
 		FB5F61BC2724EC140030DA14 /* Surge1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5F61BB2724EC140030DA14 /* Surge1App.swift */; };
 		FB5F61BE2724EC140030DA14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5F61BD2724EC140030DA14 /* ContentView.swift */; };
 		FB5F61C02724EC170030DA14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5F61BF2724EC170030DA14 /* Assets.xcassets */; };
@@ -34,7 +33,6 @@
 		FB4F14842727E20900BD0C42 /* Circle2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle2D.swift; sourceTree = "<group>"; };
 		FB4F14862727E31600BD0C42 /* SSColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSColor.swift; sourceTree = "<group>"; };
 		FB4F148C2727ECC500BD0C42 /* Equiqment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equiqment.swift; sourceTree = "<group>"; };
-		FB4F148E2727EE2C00BD0C42 /* EquimentDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquimentDetail.swift; sourceTree = "<group>"; };
 		FB5F61B82724EC140030DA14 /* Surge1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Surge1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5F61BB2724EC140030DA14 /* Surge1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Surge1App.swift; sourceTree = "<group>"; };
 		FB5F61BD2724EC140030DA14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +63,7 @@
 		FB3C96E22728EA0000F1A992 /* Bell */ = {
 			isa = PBXGroup;
 			children = (
+				FB4F14842727E20900BD0C42 /* Circle2D.swift */,
 				FB3C96E32728EA1F00F1A992 /* Dumbbell.swift */,
 				FB3C96E52728EB1F00F1A992 /* Kettlebell.swift */,
 			);
@@ -132,8 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				FB3C96E22728EA0000F1A992 /* Bell */,
-				FB4F148E2727EE2C00BD0C42 /* EquimentDetail.swift */,
-				FB4F14842727E20900BD0C42 /* Circle2D.swift */,
 				FB5F61D72724F9B20030DA14 /* FeatureTabView.swift */,
 				FB5F61D92724FB580030DA14 /* FeatureItemView.swift */,
 				FB5F61DB2725030E0030DA14 /* SliderView.swift */,
@@ -249,7 +246,6 @@
 				FB5F61DA2724FB580030DA14 /* FeatureItemView.swift in Sources */,
 				FB4F14852727E20900BD0C42 /* Circle2D.swift in Sources */,
 				FB4F148D2727ECC500BD0C42 /* Equiqment.swift in Sources */,
-				FB4F148F2727EE2C00BD0C42 /* EquimentDetail.swift in Sources */,
 				FB5F61D62724F85F0030DA14 /* Constant.swift in Sources */,
 				FB5F61D32724F8270030DA14 /* CodeableBundleExtension.swift in Sources */,
 				FB4F14872727E31600BD0C42 /* SSColor.swift in Sources */,

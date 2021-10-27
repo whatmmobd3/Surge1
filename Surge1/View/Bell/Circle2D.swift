@@ -5,6 +5,7 @@ struct Circle2D: View {
     
     @State var startAngle:Double
     @State var endAngle:Double
+    @State var radius: CGFloat
     @State var lineWidth: CGFloat
     @State var clockwise: Bool
     
@@ -17,7 +18,8 @@ struct Circle2D: View {
     var body: some View {
         let gradient = AngularGradient(colors: colorArray, center: .center, startAngle: .degrees(startAngleColor), endAngle: .degrees(endAngleColor))
         ZStack {
-            AddCircle(startAngle: $startAngle, endAngle: $endAngle, clockwise: $clockwise)
+            AddCircle(startAngle: $startAngle, endAngle: $endAngle,
+                      radius: $radius,clockwise: $clockwise)
                 .stroke(style: StrokeStyle(lineWidth: lineWidth, lineCap: .round))
                 .fill(gradient)
         }
@@ -28,7 +30,8 @@ struct Circle2D: View {
 struct Circle2D_Previews: PreviewProvider {
     static var previews: some View {
         Circle2D(
-            startAngle: 180, endAngle: 300,lineWidth: 5, clockwise: true,
+            startAngle: 180, endAngle: 300,
+            radius: 40, lineWidth: 5, clockwise: true,
             colorArray:
                 [Color(hex: "F81628"), Color(hex: "F81628"), Color(hex: "1245FA")],
             startAngleColor: 0, endAngleColor: 120)
@@ -40,12 +43,13 @@ struct Circle2D_Previews: PreviewProvider {
 struct AddCircle: Shape{
     @Binding var startAngle: Double
     @Binding var endAngle: Double
+    @Binding var radius: CGFloat
     @Binding var clockwise: Bool
     
     
     func path(in rect: CGRect) -> Path{
         var path = Path()
-        path.addArc(center: CGPoint(x: rect.width / 2, y: rect.height / 2), radius: 40,
+        path.addArc(center: CGPoint(x: rect.width / 2, y: rect.height / 2), radius: radius,
                     startAngle: .degrees(startAngle),
                     endAngle: .degrees(endAngle), clockwise: clockwise)
         return path

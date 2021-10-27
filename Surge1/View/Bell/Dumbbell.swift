@@ -15,7 +15,9 @@ struct Dumbbell: View {
     var body: some View {
         HStack {
             ZStack{
-                Circle2D(startAngle: 180, endAngle: 300,lineWidth: 5, clockwise: true,
+                Circle2D(startAngle: 180, endAngle: 300,
+                         
+                         radius: 40, lineWidth: 5, clockwise: true,
                          colorArray:  [Color(hex: "F81628"), Color(hex: "F81628"), Color(hex: "1245FA")],
                          startAngleColor: 0, endAngleColor: 120)
                 Image("dumbell")
