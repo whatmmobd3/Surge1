@@ -30,7 +30,7 @@ struct Circle2D: View {
 struct Circle2D_Previews: PreviewProvider {
     static var previews: some View {
         Circle2D(
-            startAngle: 180, endAngle: 300,
+            startAngle: 0, endAngle: 90,
             radius: 40, lineWidth: 5, clockwise: true,
             colorArray:
                 [Color(hex: "F81628"), Color(hex: "F81628"), Color(hex: "1245FA")],

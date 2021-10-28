@@ -20,7 +20,7 @@ struct StartedView: View {
                 Text("Start")
                     .foregroundColor(.white)
                     .frame(width: 300, height: 50)
-                    .background(Color.green)
+                    .background(Color.init(red: 23/255, green: 23/255, blue: 23/255))
                     .cornerRadius(8.0)
                 
                 

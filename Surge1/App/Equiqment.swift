@@ -8,7 +8,7 @@ struct Equiqment: View {
                 .font(.title)
             Text("equiment")
                 .font(.title)
-            
+                        
             Text("Dumbbell")
                 .font(.title3)
                 .padding(.top, 30)
